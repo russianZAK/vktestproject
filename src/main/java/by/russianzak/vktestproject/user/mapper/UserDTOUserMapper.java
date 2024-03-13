@@ -20,6 +20,8 @@ public interface UserDTOUserMapper {
   @Mapping(target = "accountNonLocked", constant = "true")
   @Mapping(target = "credentialsNonExpired", constant = "true")
   @Mapping(target = "enabled", constant = "true")
+  @Mapping(target = "id", ignore = true)
+  @Mapping(target = "roles", ignore = true)
   User userDTOToUser(UserDTO userDTO, @Context PasswordEncoder passwordEncoder);
 
   @Named("encodePassword")
