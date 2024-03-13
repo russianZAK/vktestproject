@@ -100,11 +100,11 @@
    ```
 3. Перейдите в директорию проекта:
    ```bash
-   cd proxy-server
+   cd vktestproject
    ```
 4. Соберите проект:
    ```bash
-   cd proxy-server
+   gradle build
    ```
 5. Запустите Kibana и ElasticSearch
 6. Запустите приложение:
