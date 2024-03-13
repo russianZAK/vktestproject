@@ -29,7 +29,7 @@ public class SecurityConfig {
   @Bean
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-    http.addFilterAfter(loggingFilter, UsernamePasswordAuthenticationFilter.class);
+    http.addFilterBefore(loggingFilter, UsernamePasswordAuthenticationFilter.class);
 
     return http
         .httpBasic().and().csrf().disable()

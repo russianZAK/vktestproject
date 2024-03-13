@@ -19,7 +19,6 @@ public class AlbumService {
 
   private final RestTemplate restTemplate;
 
-
   @Cacheable("albums")
   public List<Album> getAllAlbums() {
     return Arrays.asList(

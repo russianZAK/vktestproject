@@ -34,8 +34,6 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
 
     Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-    LocalDateTime currentTime = LocalDateTime.now();
-
     Map<String, String[]> parameterMap = request.getParameterMap();
     List<String> parameters = new ArrayList<>();
     for (Map.Entry<String, String[]> entry : parameterMap.entrySet()) {

@@ -38,8 +38,10 @@ public class WebSocketAudit {
   @Field(type = FieldType.Keyword, name = "username")
   private String username;
 
+  @Builder.Default
   private Set<WebSocketMessage> messages = new HashSet<>();
 
+  @Builder.Default
   private Set<WebSocketMessage> responses = new HashSet<>();
 
   public void addNewMessage(String message) {
