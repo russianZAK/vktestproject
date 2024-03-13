@@ -73,11 +73,9 @@
    elasticsearch.hosts: ["http://localhost:9200"]
    ```
    
-6. Запустите Kibana, выполнив следующую команду:
-   ```bash
-    ./bin/kibana
-   ```
-7. Kibana будет доступна по адресу http://localhost:5601/. Откройте этот адрес в браузере, чтобы начать использовать Kibana для анализа данных из Elasticsearch.
+6. Запустите Kibana
+   
+8. Kibana будет доступна по адресу http://localhost:5601/. Откройте этот адрес в браузере, чтобы начать использовать Kibana для анализа данных из Elasticsearch.
 
 
 ## Установка Elasticsearch
@@ -88,11 +86,7 @@
 
 3. Перейдите в директорию, где распакован Elasticsearch.
 
-4. Запустите Elasticsearch, выполнив следующую команду:
-
-   ```bash
-   ./bin/elasticsearch
-   ```
+4. Запустите Elasticsearch
 
    
 ## Запуск проекта
